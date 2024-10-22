@@ -49,6 +49,23 @@ router.delete('/removerPaciente/:CPF', async (request, response) => {
     }
 });
 
+// Alterar cadastro do paciente
+
+router.put("/alterarPaciente/:CPF", async (request, response) => {
+
+    try {
+        const updatedPaciente = await Paciente.findOneAndUpdate(
+            { CPF: request.params.CPF }, request.body, { new: true });
+        if (!updatedPaciente) {
+            return response.status(404).json({ message: 'Paciente não encontrado' });
+        }
+        response.status(200).json(updatedPaciente);
+    } catch (error) {
+        response.status(400).json({ error: error.message });
+    }
+
+
+})
 
 
 module.exports = router;
