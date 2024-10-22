@@ -3,7 +3,7 @@ const router = express.Router();
 const Paciente = require('../models/Paciente');
 
 // Retorna todos os pacientes
-router.get('/pacientes', async (request, response) => {
+router.get('/', async (request, response) => {
     try {
         const pacientes = await Paciente.find();
         response.status(200).json(pacientes); // Corrigido para 'response'

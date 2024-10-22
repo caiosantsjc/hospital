@@ -1,12 +1,26 @@
+[
 {
-    "nome": "Caio",
-    "CPF": "54485871860",
-    "RG": 534297778,
-    "idade": 18,
-    "sexo": "Masculino",
-    "telefone": "12991485681",
-    "telefoneResponsavel": "",
-    "descricaoCaso": "descricao do caso do paciente",
-    "dataEntrada": "",
-    "dataSaida": ""
-  }
+  "nome": "Caio",
+  "CPF": "54485871860",
+  "RG": 534297778,
+  "idade": 18,
+  "sexo": "Masculino",
+  "telefone": "12991485681",
+  "telefoneResponsavel": "",
+  "descricaoCaso": "descricao do caso do paciente",
+  "dataEntrada": "",
+  "dataSaida": ""
+},
+{
+  "_id": "6717e0e30a3d3dd30a51b553",
+  "nome": "João Silva",
+  "CPF": "12345678901",
+  "RG": "12345678",
+  "idade": 30,
+  "sexo": "Masculino",
+  "telefone": "987654321",
+  "descricaoCaso": "Paciente com dor de cabeça.",
+  "dataEntrada": "2024-10-22T00:00:00.000Z",
+  "__v": 0
+}
+]

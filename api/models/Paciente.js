@@ -1,4 +1,4 @@
-const mongoose = require(`mongoose`);
+const mongoose = require('mongoose');
 
 const pacienteSchema = new mongoose.Schema({
     nome: {
@@ -20,8 +20,7 @@ const pacienteSchema = new mongoose.Schema({
     },
     idade: {
         type: Number,
-        required: true,
-        trim: true
+        required: true 
     },
     sexo: {
         type: String,
@@ -36,17 +35,16 @@ const pacienteSchema = new mongoose.Schema({
         type: String,
         required: false
     },
-
     descricaoCaso: {
         type: String,
         required: true
     },
     dataEntrada: {
-        type: Date,
+        type: String,
         required: true
     },
     dataSaida: {
-        type: Date,
+        type: String,
         required: false
     }
 });
