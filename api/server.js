@@ -13,7 +13,6 @@ mongoose.connect(`mongodb://localhost:27017/${nomeDB}`)
 app.use(express.json());
 app.use('/api/pacientes', pacienteRoutes);
 
-// Middleware de erro
 app.use((err, req, res, next) => {
     console.error(err.stack); // Log do erro
     res.status(500).json({ error: 'Algo deu errado!' }); // Resposta genérica de erro

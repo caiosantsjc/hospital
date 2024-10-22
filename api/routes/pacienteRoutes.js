@@ -12,10 +12,10 @@ router.get('/', async (request, response) => {
     }
 });
 
-// Retorna um paciente pelo ID
-router.get('/paciente/:id', async (request, response) => {
+// Retorna um paciente pelo CPF
+router.get('/paciente/:CPF', async (request, response) => {
     try {
-        const paciente = await Paciente.findById(request.params.id);
+        const paciente = await Paciente.findById(request.params.CPF);
         if (!paciente) {
             return response.status(404).json({ message: 'Paciente não encontrado' });
         }
@@ -35,5 +35,6 @@ router.post('/adicionarPaciente', async (request, response) => { // Adicionada a
         response.status(400).json({ error: error.message });
     }
 });
+
 
 module.exports = router;
