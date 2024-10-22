@@ -1,0 +1,12 @@
+{
+    "nome": "Caio",
+    "CPF": "54485871860",
+    "RG": 534297778,
+    "idade": 18,
+    "sexo": "Masculino",
+    "telefone": "12991485681",
+    "telefoneResponsavel": "",
+    "descricaoCaso": "descricao do caso do paciente",
+    "dataEntrada": "",
+    "dataSaida": ""
+  }
